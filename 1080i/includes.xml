@@ -222,7 +222,8 @@
                     <include>ButtonCommonValues</include>
                     <label>Exit Kodi</label>
 					<onclick>XBMC.ActivateWindow(10111)</onclick>
-					<visible>Skin.HasSetting(sideblade_hideexit)</visible>
+					<!-- <visible>Skin.HasSetting(sideblade_hideexit)</visible> -->
+					<visible>false</visible>
                 </control>
 			</control>
 		</control>

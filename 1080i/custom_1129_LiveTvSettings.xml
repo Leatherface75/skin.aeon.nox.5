@@ -81,6 +81,12 @@
 					<onclick>Skin.ToggleSetting(alternatetvosd)</onclick>
 					<selected>Skin.HasSetting(alternatetvosd)</selected>
 				</control>
+				<!-- <control type="radiobutton" id="327">
+					<label>Switch places for progressbar & icon</label>
+					<width>700</width>
+					<onclick>Skin.ToggleSetting(iconleftprogressright)</onclick>
+					<selected>Skin.HasSetting(iconleftprogressright)</selected>
+				</control> -->
 				
 				<!-- EPG TIMELINE SETTINGS  -->
 				<control type="label" id="201">
@@ -95,9 +101,9 @@
 				<control type="button" id="328">
 					<description>Epg timeline channel list</description>
 					<width>700</width>
-					<label>EPG Timeline display type:</label>
-					<label2>[COLOR labelheader]$VAR[LiveTvModOptionsLabelVar][/COLOR]</label2>
-					<onclick>$VAR[LiveTvModOptionsClickVar]</onclick>
+					<label>Guide channels type:</label>
+					<label2>[COLOR labelheader]$VAR[GuideChannelListTypeOptionsLabelVar][/COLOR]</label2>
+					<onclick>$VAR[GuideChannelListTypeOptionsClickVar]</onclick>
 				</control>
 				
 				<!-- INFOBAR SETTINGS  -->
@@ -109,6 +115,13 @@
 					<label>Infobar Options</label>
 					<textcolor>themecolor</textcolor>
 					<aligny>center</aligny>
+				</control>
+				<control type="button" id="401">
+					<description>Infobar types</description>
+					<width>700</width>
+					<label>Infobar type:</label>
+					<label2>[COLOR selected]$VAR[LiveTvInfobarTypeOptionsLabelVar][/COLOR]</label2>
+					<onclick>$VAR[LiveTvInfobarTypeOptionsClickVar]</onclick>
 				</control>
 				<control type="radiobutton" id="406">
 					<label>Hide encryption information</label>
@@ -163,12 +176,12 @@
 					<selected>Skin.HasSetting(sideblade_hidesearch)</selected>
 					<width>700</width>
 				</control>
-				<control type="radiobutton" id="409">
+				<!-- <control type="radiobutton" id="409">
 					<label>Hide Exit Kodi</label>
 					<onclick>Skin.ToggleSetting(sideblade_hideexit)</onclick>
 					<selected>!Skin.HasSetting(sideblade_hideexit)</selected>
 					<width>700</width>
-				</control>
+				</control> -->
 			</control>
 			
 		</control>
