@@ -97,7 +97,7 @@
 		<top>100</top>
 		<width>400</width>
 		<height>1080</height>
-		<onleft>9050</onleft>
+		<!-- <onleft>9050</onleft> -->
 		<onright>ClearProperty(MediaMenu,Home)</onright>
 		<onright condition="!Window.IsVisible(tvguide)">50</onright>
 		<onright condition="Window.IsVisible(tvguide)">10</onright>
