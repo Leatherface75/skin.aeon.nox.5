@@ -1,3 +1,13 @@
+[B]5.6.0-1.9[/B]
+- New: Added Infobar-type: Compact (choose from sidebar settings)
+- New: Hidden background textures when using Guide-view in fullscreen-video
+- Fixed buggs in the standard infobar (active encryption & tuner color)
+- Fixed missing background textures in Guide views
+- Removed Pause icon while zapping or while channel buffers
+- Larger fonts on certain panels (dialog info\infobar)
+- Changed animation to fade for OSD and infobar
+- Changed background texture for the "mute-bug"
+
 [B]5.6.0-1.8[/B]
 - New channels view: BigList (enigma2-style)
 - Larger font size on BigList and Channels-OSD
