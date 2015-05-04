@@ -1,6 +1,15 @@
+[B]5.7.0-1.8[/B]
+- New channels view: BigList (enigma2-style)
+- Larger font size on BigList and Channels-OSD
+- Changed to fade-animation for Channels-OSD
+- Minor fixes
+
+[B]5.7.0-1.7[/B]
+- Integration with LiveTV mod.
+- Added White-theme
+
 [B]5.7.0[/B]
-- Added option to hide (imdb) rating from list views - thx hauptbenutzer.
-- BigList: Use list overlay instead of thumb overlay.
+- Fixed a problem with black overlay texture.
 
 [B]5.5.9[/B]
 - Updated language files from Transifex
