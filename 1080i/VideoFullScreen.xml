@@ -57,7 +57,7 @@
 		<control type="group" id="1">
 			<left>560</left>
 			<top>33</top>
-			<visible allowhiddenfocus="true">Control.IsVisible(503) + VideoPlayer.Content(LiveTV)</visible>
+			<visible allowhiddenfocus="true">false</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image" id="1">
 				<description>background image</description>
