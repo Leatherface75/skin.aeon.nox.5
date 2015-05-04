@@ -188,30 +188,29 @@
                     </control>
 					<control type="group">
 						<visible>[ListItem.HasTimer | ListItem.IsRecording]</visible>
-						<visible>true</visible>
 						<control type="label">
 							<posy>0</posy>
 							<width>120</width>
 							<height>60</height>
 							<font>IconSmall</font>
-							<textoffsetx>15</textoffsetx>
+							<textoffsetx>14</textoffsetx>
 							<textcolor>themecolor</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label></label>
-							<align>right</align>
-							<visible>ListItem.HasTimer</visible>
+							<align>left</align>
+							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 						</control>
 						<control type="label">
 							<posy>0</posy>
 							<width>120</width>
 							<height>60</height>
 							<font>IconSmall</font>
-							<textoffsetx>15</textoffsetx>
+							<textoffsetx>14</textoffsetx>
 							<textcolor>DDFF0000</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label></label>
 							<visible>ListItem.IsRecording</visible>
-							<align>right</align>
+							<align>left</align>
 						</control>
 					</control>
 					<control type="label" id="1">
@@ -222,7 +221,7 @@
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<animation effect="slide" start="0,0" end="0,-20" time="100" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
+						<animation effect="slide" start="0,0" end="40,0" time="0" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
 					</control>
                 </itemlayout>
                 <focusedlayout height="60" width="120">
@@ -236,22 +235,24 @@
 							<width>120</width>
 							<height>60</height>
 							<font>IconSmall</font>
-							<textoffsetx>15</textoffsetx>
+							<textoffsetx>14</textoffsetx>
+							<textcolor>themecolor</textcolor>
 							<selectedcolor>themecolor</selectedcolor>
 							<label></label>
-							<visible>ListItem.HasTimer</visible>
-							<align>right</align>
+							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+							<align>left</align>
 						</control>
 						<control type="label">
 							<posy>0</posy>
 							<width>120</width>
 							<height>60</height>
 							<font>IconSmall</font>
-							<textoffsetx>15</textoffsetx>
+							<textoffsetx>14</textoffsetx>
+							<textcolor>DDFF0000</textcolor>
 							<selectedcolor>DDFF0000</selectedcolor>
 							<label></label>
 							<visible>ListItem.IsRecording</visible>
-							<align>right</align>
+							<align>left</align>
 						</control>
 					</control>
 					<control type="label" id="1">
@@ -261,7 +262,7 @@
 						<textoffsetx>15</textoffsetx>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
-						<animation effect="slide" start="0,0" end="0,-20" time="100" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
+						<animation effect="slide" start="0,0" end="40,0" time="0" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
 					</control>
 				</focusedlayout>
 			</control>

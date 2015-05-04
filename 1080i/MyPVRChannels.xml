@@ -110,20 +110,35 @@
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<animation effect="slide" start="0" end="-20" time="100" tween="sine" easing="in" condition="ListItem.IsRecording">Conditional</animation>
+						<animation effect="slide" start="0" end="-30" time="0" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
 					</control>
-					<control type="label">
-						<left>708</left>
-						<top>45</top>
-						<width>120</width>
-						<height>30</height>
-						<font>IconSmall</font>
-						<textoffsetx>15</textoffsetx>
-						<textcolor>grey2</textcolor>
-						<align>right</align>
-						<selectedcolor>selected</selectedcolor>
-						<label></label>
-						<visible>ListItem.IsRecording</visible>
+					<control type="group">
+						<visible>[ListItem.HasTimer | ListItem.IsRecording]</visible>
+						<left>715</left>
+						<control type="label">
+							<top>45</top>
+							<width>100</width>
+							<height>30</height>
+							<font>IconSmall</font>
+							<textoffsetx>15</textoffsetx>
+							<textcolor>themecolor</textcolor>
+							<align>right</align>
+							<selectedcolor>themecolor</selectedcolor>
+							<label></label>
+							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						</control>
+						<control type="label">
+							<top>45</top>
+							<width>100</width>
+							<height>30</height>
+							<font>IconSmall</font>
+							<textoffsetx>15</textoffsetx>
+							<textcolor>red</textcolor>
+							<align>right</align>
+							<selectedcolor>red</selectedcolor>
+							<label></label>
+							<visible>ListItem.IsRecording</visible>
+						</control>
 					</control>
 				</itemlayout>
 				<focusedlayout height="120" width="821">
@@ -192,19 +207,35 @@
 						<aspectratio>keep</aspectratio>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<animation effect="slide" start="0" end="-20" time="100" tween="sine" easing="in" condition="ListItem.IsRecording">Conditional</animation>
+						<animation effect="slide" start="0" end="-30" time="0" tween="sine" easing="in" condition="[ListItem.HasTimer | ListItem.IsRecording]">Conditional</animation>
 					</control>
-					<control type="label">
-						<left>708</left>
-						<top>45</top>
-						<width>120</width>
-						<height>30</height>
-						<font>IconSmall</font>
-						<textoffsetx>15</textoffsetx>
-						<align>right</align>
-						<selectedcolor>selected</selectedcolor>
-						<label></label>
-						<visible>ListItem.IsRecording</visible>
+					<control type="group">
+						<visible>[ListItem.HasTimer | ListItem.IsRecording]</visible>
+						<left>715</left>
+						<control type="label">
+							<top>45</top>
+							<width>100</width>
+							<height>30</height>
+							<font>IconSmall</font>
+							<textoffsetx>15</textoffsetx>
+							<textcolor>themecolor</textcolor>
+							<align>right</align>
+							<selectedcolor>themecolor</selectedcolor>
+							<label></label>
+							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+						</control>
+						<control type="label">
+							<top>45</top>
+							<width>100</width>
+							<height>30</height>
+							<font>IconSmall</font>
+							<textoffsetx>15</textoffsetx>
+							<textcolor>red</textcolor>
+							<align>right</align>
+							<selectedcolor>red</selectedcolor>
+							<label></label>
+							<visible>ListItem.IsRecording</visible>
+						</control>
 					</control>
 				</focusedlayout>
 			</control>
@@ -839,8 +870,9 @@
 							<visible>!Player.HasVideo</visible>
 						</control>
 						<control type="image" id="56">
+							<top>2</top>
 							<width>716</width>
-							<height>400</height>
+							<height>320</height>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<texture>$INFO[Container(52).ListItem.PlotOutline]</texture>
 							<visible>!Player.HasVideo + SubString(Container(52).ListItem.PlotOutline,"http://",Left) | SubString(Container(52).ListItem.PlotOutline,"https://",Left)</visible>
@@ -988,10 +1020,9 @@
 				</control>
 				
 				<control type="scrollbar" id="80">
-					<visible>false</visible>
-					<left>990</left>
-					<width>12</width>
-					<height>904</height>
+					<left>989</left>
+					<width>14</width>
+					<height>875</height>
 					<onleft>52</onleft>
 					<onright>52</onright>
 					<ondown>80</ondown>
