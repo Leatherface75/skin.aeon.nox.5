@@ -1,3 +1,11 @@
+[B]5.6.0-1.10[/B]
+- New: LiveTV Widget for home menu. Shows current & next recording. (Enable in skin settings)
+- New: Small weather icon on home menu (add your own icons to /media/weather/normal)
+- Fixed icons for recording and timers on several views
+- Redesigned EPG dialog (shows start-time)
+- Removed Channel-group dialog in fullscreen LiveTV (was always visible on some devices)
+- Added scrollbar to "BigList" channel-view
+
 [B]5.6.0-1.9[/B]
 - New: Added Infobar-type: Compact (choose from sidebar settings)
 - New: Hidden background textures when using Guide-view in fullscreen-video
@@ -18,6 +26,8 @@
 - Integration with LiveTV mod.
 - Added White-theme
 
+
+------------------------- BigNoid's changes -----------------------------
 [B]5.6.0[/B]
 - Fixed a problem with black overlay texture.
 
