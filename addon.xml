@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.aeon.nox.5.maniac"
-  version="5.7.0-1.8.1"
+  version="5.7.0-1.9"
   name="Aeon Nox 5 - Maniac"
   provider-name="Maniac">
 	<requires>
 		<import addon="xbmc.gui" version="5.8.0"/>
-		<import addon="script.grab.fanart" version="0.12.8"/>
+		<import addon="script.grab.fanart" version="0.14.1"/>
 		<import addon="script.skinshortcuts" version="0.4.5"/>
-		<import addon="service.library.data.provider" version="0.0.7"/>
+		<import addon="service.library.data.provider" version="0.0.9"/>
 	</requires>
 	<extension
 	  point="xbmc.gui.skin"
