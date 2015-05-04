@@ -756,7 +756,7 @@
 				</control>
 				<control type="image">
 					<animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
-					<left>850</left>
+					<left>840</left>
 					<top>10</top>
 					<width>40</width>
 					<height>40</height>
@@ -790,7 +790,7 @@
 					<align>right</align>
 					<textcolor>white</textcolor>
 					<selectedcolor>white</selectedcolor>
-					<font>Font_Bold19</font>
+					<font>font14_textbox</font>
 					<label>[B]$INFO[ListItem.ChannelNumber][/B]</label>
 				</control>
 				<control type="progress">
@@ -808,14 +808,14 @@
 					<top>0</top>
 					<textcolor>white</textcolor>
 					<selectedcolor>white</selectedcolor>
-					<font>Font_Bold19</font>
+					<font>font14_textbox</font>
 					<width>700</width>
 					<height>61</height>
 					<label>[B]$INFO[ListItem.Label][/B] $INFO[ListItem.Title, ]</label>
 				</control>
 				<control type="image">
 					<animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
-					<left>850</left>
+					<left>840</left>
 					<top>12</top>
 					<width>40</width>
 					<height>40</height>
@@ -1176,16 +1176,27 @@
 	</include>
 	
 	
-	<variable name="LiveTvModOptionsClickVar">
+	<variable name="GuideChannelListTypeOptionsClickVar">
 		<value condition="IsEmpty(Skin.String(LiveTV.EpgViewChannels))">Skin.SetString(LiveTV.EpgViewChannels,1)</value>
 		<value condition="StringCompare(Skin.String(LiveTV.EpgViewChannels),1)">Skin.SetString(LiveTV.EpgViewChannels,2)</value>
 		<value condition="StringCompare(Skin.String(LiveTV.EpgViewChannels),2)">Skin.Reset(LiveTV.EpgViewChannels)</value>
 	</variable>
-	<variable name="LiveTvModOptionsLabelVar">
+	<variable name="GuideChannelListTypeOptionsLabelVar">
 		<value condition="StringCompare(Skin.String(LiveTV.EpgViewChannels),1)">Icon only</value>
 		<value condition="StringCompare(Skin.String(LiveTV.EpgViewChannels),2)">Name & Icon</value>
 		<value>Name only</value>
 	</variable>
+	<variable name="LiveTvInfobarTypeOptionsClickVar">
+        <value condition="IsEmpty(Skin.String(LiveTV.InfobarType))">Skin.SetString(LiveTV.InfobarType,1)</value>
+        <value condition="StringCompare(Skin.String(LiveTV.InfobarType),1)">Skin.SetString(LiveTV.InfobarType,2)</value>
+        <value condition="StringCompare(Skin.String(LiveTV.InfobarType),2)">Skin.Reset(LiveTV.InfobarType)</value>
+    </variable>
+    <variable name="LiveTvInfobarTypeOptionsLabelVar">
+        <value condition="StringCompare(Skin.String(LiveTV.InfobarType),1)">Compact</value>
+        <value condition="StringCompare(Skin.String(LiveTV.InfobarType),2)">Faded</value>
+        <value>Standard</value>
+    </variable>
+
 	<variable name="PvrTimelineProgressTextureVar">
 		<value condition="StringCompare(Skin.CurrentColourTheme,white)">new_pvr/PVR-EpgProgressIndicator_light.png</value>
 		<value>new_pvr/PVR-EpgProgressIndicator.png</value>
