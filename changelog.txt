@@ -1,3 +1,9 @@
+[B]5.6.0-1.11[/B]
+- New: Option to select different Guide-views (see mod settings via sideblade)
+- Minor redesign of the wall-view for Channels
+- EPG-view: Added StartDate & Description on focus
+- Fixed a bug when using LiveTV Widget with low main menu.
+
 [B]5.6.0-1.10[/B]
 - New: LiveTV Widget for home menu. Shows current & next recording. (Enable in skin settings)
 - New: Small weather icon on home menu (add your own icons to /media/weather/normal)
