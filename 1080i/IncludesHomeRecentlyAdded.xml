@@ -414,16 +414,6 @@
 					<width>1920</width>
 					<height>560</height>
 					<texture>gradient_floor.png</texture>
-					<visible>!Skin.HasSetting(lowermainmenu)</visible>
-				</control>
-				<control type="image">
-					<description>bg image</description>
-					<left>0</left>
-					<top>-50</top>
-					<width>1920</width>
-					<height>560</height>
-					<texture flipy="true">gradient_floor.png</texture>
-					<visible>Skin.HasSetting(lowermainmenu)</visible>
 				</control>
 				<control type="image">
 					<description>Cover image</description>
@@ -988,9 +978,7 @@
 	<include name="LiveTVWidget">
 		<control type="group">
 			<left>490r</left>
-			<top>0</top>
-			<animation effect="slide" start="0,0" end="0,150" time="0" tween="sine" easing="in" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,500" time="0" tween="sine" easing="in" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<top>130</top>
 			<visible>StringCompare(Container(9000).ListItem.Property(WidgetType),12)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -999,7 +987,7 @@
 				<animation effect="slide" start="0,0" end="0,100" time="0" condition="PVR.IsRecording">conditional</animation>
 				<visible>PVR.HasNonRecordingTimer</visible>
 				<height>120</height>
-				<top>30</top>
+				<top>50</top>
 				<control type="image">
 					<left>-200</left>
 					<top>0</top>
