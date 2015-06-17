@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="EpgTimelineStandard">
 		<control type="group">
@@ -187,7 +188,7 @@
 							<textoffsetx>14</textoffsetx>
 							<textcolor>themecolor</textcolor>
 							<selectedcolor>selected</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<align>left</align>
 							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 						</control>
@@ -199,7 +200,7 @@
 							<textoffsetx>14</textoffsetx>
 							<textcolor>DDFF0000</textcolor>
 							<selectedcolor>selected</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<visible>ListItem.IsRecording</visible>
 							<align>left</align>
 						</control>
@@ -220,16 +221,16 @@
 						<texture border="4">listselect_fo.png</texture>
 					</control>
 					<control type="group">
-						<visible>[ListItem.HasTimer | ListItem.IsRecording]</visible>
+						<!-- <visible>[ListItem.HasTimer | ListItem.IsRecording]</visible> -->
 						<control type="label">
 							<posy>0</posy>
 							<width>120</width>
 							<height>60</height>
 							<font>IconSmall</font>
-							<textoffsetx>14</textoffsetx>
+							<textoffsetx>15</textoffsetx>
 							<textcolor>themecolor</textcolor>
 							<selectedcolor>themecolor</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 							<align>left</align>
 						</control>
@@ -241,7 +242,7 @@
 							<textoffsetx>14</textoffsetx>
 							<textcolor>DDFF0000</textcolor>
 							<selectedcolor>DDFF0000</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<visible>ListItem.IsRecording</visible>
 							<align>left</align>
 						</control>
@@ -388,7 +389,7 @@
 						<posy>0</posy>
 						<width>400</width>
 						<height>55</height>
-						<texture border="0" colordiffuse="33FFFFFF">epg-channels.png</texture>
+						<texture border="0" colordiffuse="33FFFFFF">new_pvr/epg-channels.png</texture>
 					</control>
 					<control type="label">
 						<width>60</width>
@@ -415,7 +416,7 @@
 						<posy>2</posy>
 						<width>65</width>
 						<height>52</height>
-						<aspectratio align="right">keep</aspectratio>
+						<aspectratio align="center">keep</aspectratio>
 						<fadetime>400</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
@@ -425,7 +426,7 @@
 						<posy>2</posy>
 						<width>200</width>
 						<height>52</height>
-						<aspectratio align="right">keep</aspectratio>
+						<aspectratio align="center">keep</aspectratio>
 						<fadetime>400</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),1) + !IsEmpty(ListItem.Icon)</visible>
@@ -436,7 +437,7 @@
 						<posy>0</posy>
 						<width>400</width>
 						<height>55</height>
-						<texture border="0" colordiffuse="33FFFFFF">epg-channels.png</texture>
+						<texture border="0" colordiffuse="33FFFFFF">new_pvr/epg-channels.png</texture>
 					</control>
 					<control type="label">
 						<width>60</width>
@@ -461,7 +462,7 @@
 						<posy>2</posy>
 						<width>65</width>
 						<height>52</height>
-						<aspectratio align="left">keep</aspectratio>
+						<aspectratio align="center">keep</aspectratio>
 						<fadetime>400</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<visible>StringCompare(Skin.String(LiveTV.EpgViewChannels),2) + !IsEmpty(ListItem.Icon)</visible>
@@ -482,7 +483,7 @@
 						<width>120</width>
 						<height>55</height>
 						<aspectratio>stretch</aspectratio>
-						<texture border="0" colordiffuse="33FFFFFF">epg-item.png</texture>
+						<texture border="0" colordiffuse="33FFFFFF">new_pvr/epg-item.png</texture>
 					</control>
 					<control type="image" id="1">
 						<width>120</width>
@@ -507,7 +508,7 @@
 							<textoffsetx>14</textoffsetx>
 							<textcolor>themecolor</textcolor>
 							<selectedcolor>selected</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<align>left</align>
 							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 						</control>
@@ -519,7 +520,7 @@
 							<textoffsetx>14</textoffsetx>
 							<textcolor>DDFF0000</textcolor>
 							<selectedcolor>selected</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<visible>ListItem.IsRecording</visible>
 							<align>left</align>
 						</control>
@@ -549,7 +550,7 @@
 							<textoffsetx>14</textoffsetx>
 							<textcolor>themecolor</textcolor>
 							<selectedcolor>themecolor</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 							<align>left</align>
 						</control>
@@ -561,7 +562,7 @@
 							<textoffsetx>14</textoffsetx>
 							<textcolor>DDFF0000</textcolor>
 							<selectedcolor>DDFF0000</selectedcolor>
-							<label>?</label>
+							<label></label>
 							<visible>ListItem.IsRecording</visible>
 							<align>left</align>
 						</control>
